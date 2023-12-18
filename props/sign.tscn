@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dijran1figfor"]
+
+[ext_resource type="Texture2D" uid="uid://dubu3t618qavw" path="res://art/props.png" id="1_ctwvs"]
+[ext_resource type="PackedScene" uid="uid://cgnoqr4v6dglf" path="res://components/interaction.tscn" id="3_23c2j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tt2sq"]
+size = Vector2(14, 3)
+
+[node name="Sign" type="StaticBody2D"]
+z_index = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ctwvs")
+offset = Vector2(0, -8)
+hframes = 4
+vframes = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_tt2sq")
+
+[node name="Interaction" parent="." instance=ExtResource("3_23c2j")]
+interaction_type = "Dialog"

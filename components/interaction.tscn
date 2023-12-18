@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgnoqr4v6dglf"]
+
+[ext_resource type="Script" path="res://components/interaction.gd" id="1_kbu50"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dbvu2"]
+radius = 9.0
+
+[node name="Interaction" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_kbu50")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -9)
+shape = SubResource("CircleShape2D_dbvu2")
+debug_color = Color(0.686275, 0.443137, 0.619608, 0.419608)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(3, -26)

@@ -1,0 +1,20 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1702909959
+icon.svg::CompressedTexture2D::6557678269164965161::1701784970::1702909959::1::::<><>::
+README.md::TextFile::-1::1702909876::0::1::::<><>::
+::res://art/::1702909959
+dialogs.png::CompressedTexture2D::1241352115014679629::1702457517::1702909959::1::::<><>::
+nature.png::CompressedTexture2D::1728830590316894088::1702461185::1702909959::1::::<><>::
+player sprites.png::CompressedTexture2D::8474633854129666615::1702387710::1702909959::1::::<><>::
+props.png::CompressedTexture2D::8566368690737316336::1702387883::1702909959::1::::<><>::
+::res://components/::0
+::res://game_components/::1702909326
+interaction.gd::GDScript::-1::1702909323::0::1::::<>Area2D<>::
+interaction.tscn::PackedScene::5221690889310358395::1702909326::0::1::::<><>::res://game_components/interaction.gd
+::res://player/::1702909326
+player.gd::GDScript::-1::1702474523::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::425104576736149673::1702909326::0::1::::<><>::res://player/player.gd<>uid://ds0f8mrwht5jf::::res://art/player sprites.png<>uid://cgnoqr4v6dglf::::res://game_components/interaction.tscn
+::res://props/::1702909326
+sign.tscn::PackedScene::7740385112053706705::1702909326::0::1::::<><>::uid://dubu3t618qavw::::res://art/props.png<>uid://cgnoqr4v6dglf::::res://game_components/interaction.tscn
+::res://scenes/::1702909973
+world.tscn::PackedScene::6228698293350919630::1702909973::0::1::::<><>::uid://gb6n7ji7rlfl::::res://player/player.tscn<>uid://yvpt731htslc::::res://art/nature.png<>uid://dubu3t618qavw::::res://art/props.png<>uid://dijran1figfor::::res://props/sign.tscn
