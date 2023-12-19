@@ -1,1 +1,6 @@
+res://props/sign.tscn
+res://components/interaction.tscn
+res://components/interaction.gd
 res://scenes/world.tscn
+res://player/player.tscn
+res://components/test.tscn

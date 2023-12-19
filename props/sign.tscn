@@ -20,4 +20,8 @@ position = Vector2(0, -2.5)
 shape = SubResource("RectangleShape2D_tt2sq")
 
 [node name="Interaction" parent="." instance=ExtResource("3_23c2j")]
-interaction_type = "Dialog"
+texture_path = "res://art/dialogs.png"
+h_frames = 4
+v_frames = 3
+frame = 2
+xy_position = Vector2(5, -22)

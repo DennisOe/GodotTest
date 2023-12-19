@@ -2,7 +2,14 @@ extends Area2D
 
 
 @onready var sprite: Sprite2D = get_node("Sprite2D")
-@export var interaction_type: String = "None" # Player, Dialog
+@export_file var texture_path: String = "None"
+@export var h_frames: int = 0
+@export var v_frames: int = 0
+@export var frame: int = 0
+@export var xy_position: Vector2 = Vector2(0, 0)
+@export var visibility: bool = false
+
+
 var interaction: bool = false
 
 func _ready() -> void:
@@ -21,15 +28,12 @@ func _physics_process(_delta: float) -> void:
 
 
 func _on_area_entered(_area: Area2D) -> void:
-	if "Player" in interaction_type:
-		sprite.texture = preload("res://art/dialogs.png")
-		sprite.hframes = 4
-		sprite.vframes = 3	
-		sprite.frame = 0
-		sprite.visible = true
-	elif "Dialog" in interaction_type:
-		sprite.texture = preload("res://art/dialogs.png")
-		#sprite.frame = 1
+	sprite.texture = load(texture_path)
+	sprite.hframes = h_frames
+	sprite.vframes = v_frames
+	sprite.frame = frame
+	sprite.position = xy_position
+	sprite.visible = visibility	
 	interaction = true
 	
 	

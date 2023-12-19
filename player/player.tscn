@@ -144,4 +144,8 @@ position = Vector2(0, -1.5)
 shape = SubResource("RectangleShape2D_ewdvy")
 
 [node name="Interaction" parent="." instance=ExtResource("3_sa6ti")]
-interaction_type = "Player"
+texture_path = "res://art/dialogs.png"
+h_frames = 4
+v_frames = 3
+xy_position = Vector2(3, -26)
+visibility = true

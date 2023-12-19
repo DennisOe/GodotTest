@@ -16,5 +16,3 @@ shape = SubResource("CircleShape2D_dbvu2")
 debug_color = Color(0.686275, 0.443137, 0.619608, 0.419608)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
-position = Vector2(3, -26)
